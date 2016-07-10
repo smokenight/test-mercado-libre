@@ -1,0 +1,69 @@
+{
+  "name": "TestUXMercadoLibre",
+  "version": "1.0.0",
+  "description": "Test práctico UX para MercadoLibre",
+  "keywords": [
+    "FrontEnd",
+    "Front-End",
+    "Test",
+    "UX",
+    "MercadoLibre"
+  ],
+  "author": {
+    "name": "Francisco Capone",
+    "email": "francisco.capone@gmail.com",
+    "url": "http://portafolio.franciscocapone.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chico": "^2.0.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.2.1",
+    "del": "^1.1.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-flatten": "^0.3.0",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify": "0.0.12",
+    "gulp-plumber": "^1.0.1",
+    "gulp-pug": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-tap": "^0.1.3",
+    "gulp-uglify": "^1.1.0",
+    "gulp-watch": "^4.3.8",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "lazypipe": "^0.2.4"
+  },
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "gulpfile.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
