@@ -1,0 +1,20 @@
+div.tab__container
+  ul.tab-wrap(role="tablist")
+    li(role="tab", aria-selected="false", tabindex="0")
+      input(type="radio", id="tab-1", name="tab")
+      label.label_tab1(for="tab-1") Product description
+      article.tab-content(itemprop="description", itemscope, itemtype="http://schema.org/Product", aria-labelledby="tab-1", role="tabpanel", aria-hidden="false")
+        ul.product__offer--specifications
+          li - 7.9-inch LED-backlit Multi-Touch Display; 1024-by-768 Resolution
+          li - Apple iOS 6; Dual-Core A5 Chip 1GHZ
+          li - 5 MP iSight Camera; 1080p HD Video Recording
+          li - Wi-Fi (802.11a/b/g/n); 16 GB Capacity
+          li - Up to 10 Hours of Battery Life; 0.68 lbs
+    li(role="tab", aria-selected="true", tabindex="0", itemscope, itemtype="http://schema.org/UserComments")
+      input(type="radio", id="tab-2", name="tab", checked)
+      label.label_tab2(for="tab-2") Questions
+      article.tab-content(aria-labelledby="tab-2", role="tabpanel", aria-hidden="true")
+        h3.question(itemprop="creator", itemscope , itemtype="http://schema.org/Person") Buyer
+        div.ch-box-info(itemprop="commentText") Do you have this one in white?
+        h3.answer(itemprop="creator", itemscope , itemtype="http://schema.org/Person") Seller
+        div.ch-box-ok(itemprop="commentText") No I don't, I have only black

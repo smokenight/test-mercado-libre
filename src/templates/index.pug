@@ -1,0 +1,44 @@
+extends inc/_layouts/layout
+
+block wBody
+  main(class="product", role="main")
+    section
+      div.mesh-row(itemscope, itemtype="http://schema.org/Product")
+        div.mesh-col-12.product__name
+          header(role="banner")
+            h1(itemprop="name") Ipad Mini apple 16 GB Wifi Led 7.9
+    section
+      div.mesh-row
+        div.mesh-col-xs-12.mesh-col-xl-5.product__image
+          figure
+            img(src="images/ipad-mini.jpg", alt="Ipad Mini apple 16 GB Wifi Led 7.9", title="Ipad Mini apple 16 GB Wifi Led 7.9", itemprop="image", class="img-responsive img-border")
+        div.mesh-col-xs-12.mesh-col-xl-7.product__offer(itemscope, itemprop="offers", itemtype="http://schema.org/Offer")
+          form(action="", method="post")
+            fieldset
+              div.product__offer--price
+                meta(itemprop="priceCurrency", content="ARS")
+                p(itemprop="price")
+                  strong $ 4799
+                    sup 99
+              div.product__offer--quantity
+                label(for="quantity") Quantity
+                select(name="quantity", id="quantity", role="listbox", required, aria-required="true")
+                  -for (var i = 1; i<= 10; i++) {
+                  option(value=i) #{i}
+                  -}
+              div.product__offer--payments
+                label(for="payments") Payments
+                select(name="payments", id="payments", role="listbox", required, aria-required="true")
+                  -for (var i = 1; i<= 12; i++) {
+                  option(value=i, selected=i == 12) #{i}
+                  -}
+              div.product__offer--buy
+                input(type="submit", class="ch-btn ch-btn-big", title="Buy Ipad Mini apple 16 GB Wifi Led 7.9", value="Buy")
+          p.product__offer--disclaimer MercadoLibre ins't the owner of this product.
+          include inc/_partials/_carousel
+        div.mesh-col-12
+          hr.separator
+    section
+      div.mesh-row
+        div.mesh-col-12
+          include inc/_partials/_tabs
